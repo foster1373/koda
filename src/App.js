@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Heading, Text } from '@chakra-ui/react'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Box textAlign="center" py={10} px={6}>
+      <Heading fontSize="4xl" mb={4} color="brand.500">
+        Welcome to KODA's EPK
+      </Heading>
+      <Text fontSize="lg" mb={6}>
+        This is the official Electronic Press Kit for the band KODA.
+      </Text>
+    </Box>
+  )
 }
 
-export default App;
+export default App
