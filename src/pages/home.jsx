@@ -4,13 +4,12 @@ import { Link as RouterLink } from 'react-router-dom'
 
 import React from 'react'
 import Hero from '../components/Hero'
-import InstagramFeed from '../components/instagram-feed'
 
 const Home = () => (
   <>
     <Hero />
 
-    <Box textAlign="center" mt={8}>
+    <Box textAlign="center" my={12}>
       <Button
         as={RouterLink}
         to="/gallery"
