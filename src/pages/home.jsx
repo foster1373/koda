@@ -24,7 +24,7 @@ const Home = () => (
       </Button>
     </Box>
 
-    <InstagramFeed />
+    {/* <InstagramFeed /> */}
     {/* <GalleryPrompt /> */}
     {/* Additional sections (like news, shows, etc.) can go here */}
   </>
