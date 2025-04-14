@@ -1,4 +1,4 @@
-import { Box, Heading, SimpleGrid, Image } from '@chakra-ui/react'
+import { Box, Heading, Image, SimpleGrid } from '@chakra-ui/react'
 import pic1 from '../images/pic1.jpg'
 import pic2 from '../images/pic2.jpg'
 import pic3 from '../images/pic3.jpg'
@@ -8,11 +8,13 @@ import pic6 from '../images/pic6.jpg'
 import pic7 from '../images/pic7.jpg'
 import pic9 from '../images/pic9.jpg'
 
-const images = [pic1, pic2, pic7, pic4, pic5, pic9, pic3, pic6]
+const images = [pic4, pic2, pic7, pic1, pic5, pic9, pic3, pic6]
 
 const Gallery = () => (
-  <Box p={8}>
-    <Heading mb={4}>Gallery</Heading>
+  <Box p={16}>
+    <Heading margin="auto" mb={8} textAlign="center">
+      GALLERY
+    </Heading>
     <SimpleGrid columns={[1, 2, 3]} spacing={4}>
       {images.map((img, idx) => (
         <Image

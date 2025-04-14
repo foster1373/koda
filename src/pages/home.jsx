@@ -1,10 +1,33 @@
-import { Box, Heading, Text } from '@chakra-ui/react'
+// src/pages/Home.jsx
+import { Box, Button } from '@chakra-ui/react'
+import { Link as RouterLink } from 'react-router-dom'
+
+import React from 'react'
+import Hero from '../components/Hero'
+import InstagramFeed from '../components/instagram-feed'
 
 const Home = () => (
-  <Box textAlign="center" p={8}>
-    <Heading>KODA Electronic Press Kit</Heading>
-    <Text mt={4}>Welcome to our official EPK. Explore our story, music, and visuals.</Text>
-  </Box>
+  <>
+    <Hero />
+
+    <Box textAlign="center" mt={8}>
+      <Button
+        as={RouterLink}
+        to="/gallery"
+        variant="outline"
+        color="white"
+        borderColor="white"
+        _hover={{ bg: 'white', color: 'black' }}
+        size="lg"
+      >
+        VIEW GALLERY
+      </Button>
+    </Box>
+
+    <InstagramFeed />
+    {/* <GalleryPrompt /> */}
+    {/* Additional sections (like news, shows, etc.) can go here */}
+  </>
 )
 
 export default Home
