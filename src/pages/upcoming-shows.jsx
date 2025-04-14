@@ -36,7 +36,7 @@ const UpcomingShows = () => {
   return (
     <Box bg="black" color="white" minH="100vh" py={16} px={6}>
       <Heading textAlign="center" mb={10} fontSize="4xl" letterSpacing="wide">
-        Upcoming Shows
+        UPCOMING SHOWS
       </Heading>
 
       <VStack spacing={6} maxW="800px" mx="auto">
