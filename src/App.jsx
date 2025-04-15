@@ -12,7 +12,6 @@ import Gallery from './pages/gallery'
 import Home from './pages/home'
 import Music from './pages/music'
 import UpcomingShows from './pages/upcoming-shows'
-import Footer from './components/footer'
 
 const App = () => {
   return (

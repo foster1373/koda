@@ -10,7 +10,7 @@ const SectionHero = ({ bgImage, title, children }) => (
     bgSize="cover"
     bgRepeat="no-repeat"
   >
-    {/* Overlay */}
+    {/* Full Screen Overlay */}
     <Box
       position="absolute"
       top="0"
@@ -21,16 +21,27 @@ const SectionHero = ({ bgImage, title, children }) => (
       zIndex={0}
     />
 
+    {/* Gradient Overlay (similar to Hero.jsx) */}
+    <Box
+      position="absolute"
+      top="0"
+      left="0"
+      right="0"
+      height="100px"
+      bgGradient="linear(to bottom, black, transparent)"
+      zIndex={1}
+    />
+
     {/* Content */}
     <Box
       position="relative"
-      zIndex={1}
+      zIndex={2}
       display="flex"
       flexDirection="column"
       justifyContent="flex-start"
       alignItems="center"
       px={6}
-      pt={{ base: 28, md: 32 }} // controls how high the content appears
+      pt={{ base: 28, md: 32 }} // Controls how high the content appears
       textAlign="left"
     >
       <Box maxW="container.lg" color="white">
