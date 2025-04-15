@@ -37,10 +37,15 @@ const images = [
   { src: vert4, alt: 'Vertical 4', orientation: 'vertical' },
   { src: vert5, alt: 'Vertical 5', orientation: 'vertical' },
   { src: vert6, alt: 'Vertical 6', orientation: 'vertical' },
+
+  { src: hor1, alt: 'Horizontal 1', orientation: 'horizontal' },
+  { src: hor6, alt: 'Horizontal 6', orientation: 'horizontal' },
+  { src: hor4, alt: 'Horizontal 4', orientation: 'horizontal' },
+
   { src: vert7, alt: 'Vertical 7', orientation: 'vertical' },
-  { src: vert8, alt: 'Vertical 8', orientation: 'vertical' },
-  { src: vert9, alt: 'Vertical 9', orientation: 'vertical' },
   { src: vert10, alt: 'Vertical 10', orientation: 'vertical' },
+  { src: vert9, alt: 'Vertical 9', orientation: 'vertical' },
+  { src: vert8, alt: 'Vertical 8', orientation: 'vertical' },
   { src: vert11, alt: 'Vertical 11', orientation: 'vertical' },
   { src: vert12, alt: 'Vertical 12', orientation: 'vertical' },
   { src: vert13, alt: 'Vertical 13', orientation: 'vertical' },
@@ -48,12 +53,12 @@ const images = [
   { src: vert15, alt: 'Vertical 15', orientation: 'vertical' },
 
   // Horizontal
-  { src: hor1, alt: 'Horizontal 1', orientation: 'horizontal' },
+  // { src: hor1, alt: 'Horizontal 1', orientation: 'horizontal' },
   { src: hor2, alt: 'Horizontal 2', orientation: 'horizontal' },
   { src: hor3, alt: 'Horizontal 3', orientation: 'horizontal' },
-  { src: hor4, alt: 'Horizontal 4', orientation: 'horizontal' },
+  // { src: hor4, alt: 'Horizontal 4', orientation: 'horizontal' },
   { src: hor5, alt: 'Horizontal 5', orientation: 'horizontal' },
-  { src: hor6, alt: 'Horizontal 6', orientation: 'horizontal' },
+  // { src: hor6, alt: 'Horizontal 6', orientation: 'horizontal' },
   // { src: hor7, alt: 'Horizontal 7', orientation: 'horizontal' },
 ]
 
