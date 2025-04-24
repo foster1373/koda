@@ -22,7 +22,7 @@ const shows = [
   },
   {
     date: 'April 26, 2025',
-    venue: 'New Bar',
+    venue: 'The Woods',
     city: 'Oxford, OH',
   },
   {

@@ -10,6 +10,7 @@ import About from './pages/about'
 import Contact from './pages/contact'
 import Gallery from './pages/gallery'
 import Home from './pages/home'
+import MemberPage from './pages/members/MemberPage'
 import Music from './pages/music'
 import UpcomingShows from './pages/upcoming-shows'
 
@@ -67,6 +68,15 @@ const App = () => {
               </Layout>
             }
           />
+          <Route
+            path="/members/:slug"
+            element={
+              <Layout>
+                <MemberPage />
+              </Layout>
+            }
+          />
+
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Box>

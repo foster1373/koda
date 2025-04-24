@@ -1,7 +1,13 @@
+// src/components/section-hero.jsx
 import { Box, Heading } from '@chakra-ui/react'
 import React from 'react'
 
-const SectionHero = ({ bgImage, title, children }) => (
+const SectionHero = ({
+  bgImage,
+  title,
+  children, // your normal content
+  overlayChildren, // new slot for things you want *in* the hero
+}) => (
   <Box
     position="relative"
     minH={{ base: '100vh', md: '100vh' }}
@@ -10,7 +16,7 @@ const SectionHero = ({ bgImage, title, children }) => (
     bgSize="cover"
     bgRepeat="no-repeat"
   >
-    {/* Full Screen Overlay */}
+    {/* Full‑screen dark overlay */}
     <Box
       position="absolute"
       top="0"
@@ -21,7 +27,7 @@ const SectionHero = ({ bgImage, title, children }) => (
       zIndex={0}
     />
 
-    {/* Gradient Overlay (similar to Hero.jsx) */}
+    {/* Gradient fade at the top */}
     <Box
       position="absolute"
       top="0"
@@ -32,7 +38,11 @@ const SectionHero = ({ bgImage, title, children }) => (
       zIndex={1}
     />
 
-    {/* Content */}
+    {/* Anything you pass as overlayChildren goes straight inside the hero,
+        before the “content” wrapper. */}
+    {overlayChildren}
+
+    {/* Main content wrapper (for title + children) */}
     <Box
       position="relative"
       zIndex={2}
@@ -41,7 +51,7 @@ const SectionHero = ({ bgImage, title, children }) => (
       justifyContent="flex-start"
       alignItems="center"
       px={6}
-      pt={{ base: 28, md: 32 }} // Controls how high the content appears
+      pt={{ base: 28, md: 32 }}
       textAlign="left"
     >
       <Box maxW="container.lg" color="white">

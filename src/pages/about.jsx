@@ -1,6 +1,8 @@
-import { Text, VStack } from '@chakra-ui/react'
-import React from 'react'
+import { SimpleGrid, Text, VStack } from '@chakra-ui/react'
+import { default as React } from 'react'
+import MemberCard from '../components/MemberCard'
 import SectionHero from '../components/section-hero'
+import { members } from '../data/members'
 import hero_image from '../images/hero.jpg'
 
 const About = () => (
@@ -35,6 +37,16 @@ const About = () => (
         electrifying performance!
       </Text>
     </VStack>
+
+    <Text fontSize="2xl" mt={16} mb={6} textAlign="center">
+      Learn more about each band member below…
+    </Text>
+
+    <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={8}>
+      {members.map((m) => (
+        <MemberCard key={m.slug} member={m} />
+      ))}
+    </SimpleGrid>
   </SectionHero>
 )
 
