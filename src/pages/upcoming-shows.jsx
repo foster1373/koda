@@ -10,27 +10,12 @@ import {
 } from '@chakra-ui/react'
 import React from 'react'
 import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa'
+import { shows as allShows } from '../data/upcomingShows'
 
-const shows = [
-  {
-    date: 'April 25, 2025',
-    venue: 'Summit Music Hall',
-    city: 'Columbus, OH',
-    title: 'Toadfest',
-    ticketLink:
-      'https://www.eventbrite.com/e/toadfest-2025-ft-cane-toads-koda-loconti-mamadog-many-more-tickets-1291966589849',
-  },
-  {
-    date: 'April 26, 2025',
-    venue: 'The Woods',
-    city: 'Oxford, OH',
-  },
-  {
-    date: 'May 3, 2025',
-    venue: 'Library Bar',
-    city: 'Columbus, OH',
-  },
-]
+const upcomingShows = allShows
+  .map((show) => ({ ...show, dateObj: new Date(show.date) }))
+  .filter((show) => show.dateObj >= new Date())
+  .sort((a, b) => a.dateObj - b.dateObj)
 
 const UpcomingShows = () => {
   return (
@@ -40,7 +25,7 @@ const UpcomingShows = () => {
       </Heading>
 
       <VStack spacing={6} maxW="800px" mx="auto">
-        {shows.map((show, idx) => (
+        {upcomingShows.map((show, idx) => (
           <Box
             key={idx}
             bg="gray.800"
@@ -69,6 +54,11 @@ const UpcomingShows = () => {
                     )}
                   </Text>
                 </Flex>
+                {show.notes && (
+                  <Text fontSize="sm" color="gray.400" mt={1}>
+                    {show.notes}
+                  </Text>
+                )}
               </Box>
 
               {/* Show status tags */}
