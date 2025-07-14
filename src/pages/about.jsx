@@ -9,32 +9,23 @@ const About = () => (
   <SectionHero bgImage={hero_image} title="About KODA">
     <VStack maxW="900px" spacing={6} align="start">
       <Text fontSize="lg" lineHeight="tall">
-        KODA is a high-energy rock band shaking up the Columbus music scene with
-        blues-driven riffs, powerhouse vocals, and an electrifying stage
-        presence. Formed in 2021, the band features lead guitarist Jake
-        Klausner, rhythm guitarist/keyboardist Jackson Buss, bassist Jake
-        Brewer, drummer Brian Foster, and vocalists Jake Juenger and Nolan
-        Barbre. Longtime friends Klausner, Buss, and Brewer met Juenger at a
-        Miami University party, sparking an instant musical connection.
+        We're <strong>KODA</strong>, a rock band based in Columbus with blues-driven riffs, crushing vocals, and shows that'll blow your mind. We're Jake Klausner on lead guitar, Jackson Buss on rhythm guitar and keys, Jake Brewer on bass, Brian Foster behind the kit, and Jake Juenger and Nolan Barbre on vocals.
       </Text>
 
       <Text fontSize="lg" lineHeight="tall">
-        Cutting their teeth on college campuses and bars, KODA quickly built a
-        reputation for their explosive live shows. The band’s chemistry has led
-        to many breakthrough performances on the Columbus music scene, cementing
-        themselves as one of the city’s more exciting rising acts. Inspired by
-        bands like Led Zeppelin, Greta Van Fleet, and The Black Keys, KODA
-        blends classic rock intensity with modern sounds.
+        The whole thing started when longtime friends Jake K, Jackson, and Jake B met Jake J at some random Miami University party. We started jamming and realized we had something special—we just clicked.
       </Text>
 
       <Text fontSize="lg" lineHeight="tall">
-        Their growing discography includes singles like{' '}
-        <strong>Smokeshow</strong>, <strong>Hot Blooded</strong>, and
-        <strong> MAD HATTER</strong>, released on January 18, 2025. Up next,
-        KODA takes the stage at
-        <strong> ToadFest 2025</strong> on April 25th at The Summit Music Hall,
-        performing alongside Cane Toads, Loconti, and Mamadog. Don’t miss their
-        electrifying performance!
+        We've been grinding it out at colleges and bars across Columbus, and honestly, our live shows are where we really come alive. There's this energy that happens when we're all on stage together – it's electric and we can feel the crowd feeding off it. We've even played at the Newport Music Hall, which was absolutely incredible. We've been getting some great coverage too, including being featured in The Lantern, which called us one of the most exciting new acts in the city.
+      </Text>
+
+      <Text fontSize="lg" lineHeight="tall">
+        Our sound pulls from legends like Led Zeppelin, Greta Van Fleet, and The Black Keys, but we're not trying to copy anyone. We're just making the music we want to hear – heavy, soulful, and real.
+      </Text>
+
+      <Text fontSize="lg" lineHeight="tall">
+        We've got tracks like <strong>Smokeshow</strong>, <strong>Hot Blooded</strong>, and <strong>Mama Told Me</strong> out there, and we're always working on new stuff. You can catch us playing around Columbus regularly, so keep an eye out for our shows. Trust us, you don't want to miss it.
       </Text>
     </VStack>
 
