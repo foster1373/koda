@@ -34,7 +34,7 @@ export const shows = [
     venue: 'A&R Music Bar',
     city: 'Columbus, OH',
     title: 'Opening for Brent Cobb',
-    notes: 'Doors @7, Music at 8',
+    notes: 'Doors at 7:00. DM us for paper tickets!',
     ticketLink: 'https://www.axs.com/events/952238/brent-cobb-tickets?skin=armusicbar&_ga=2.78015442.738452507.1753964704-103789931.1753964704',
   },
   {
