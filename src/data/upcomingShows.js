@@ -30,6 +30,14 @@ export const shows = [
     notes: 'Full band, Time TBD',
   },
   {
+    date: 'August 28, 2025',
+    venue: 'A&R Music Bar',
+    city: 'Columbus, OH',
+    title: 'Opening for Brent Cobb',
+    notes: 'Doors @7, Music at 8',
+    ticketLink: 'https://www.axs.com/events/952238/brent-cobb-tickets?skin=armusicbar&_ga=2.78015442.738452507.1753964704-103789931.1753964704',
+  },
+  {
     date: 'August 29, 2025',
     venue: 'The Library Bar OSU',
     city: 'Columbus, OH',
