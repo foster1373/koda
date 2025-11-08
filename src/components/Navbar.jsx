@@ -13,7 +13,6 @@ import {
   useBreakpointValue,
   VStack,
 } from '@chakra-ui/react'
-import React from 'react'
 import {
   FaApple,
   FaFacebookF,
@@ -22,18 +21,31 @@ import {
   FaYoutube,
 } from 'react-icons/fa'
 import { Link as RouterLink } from 'react-router-dom'
+import { shows as allShows } from '../data/upcomingShows'
 import logo from '../images/KODA_logo_white.png'
 
 const navLinks = [
   { label: 'ABOUT', to: '/about' },
   { label: 'MUSIC', to: '/music' },
-  { label: 'Upcoming Shows', to: '/upcoming-shows' },
+  { label: 'Upcoming Shows', to: '/upcoming-shows', showWhenEmpty: false },
   { label: 'Gallery', to: '/gallery' },
   { label: 'Contact', to: '/contact' },
 ]
 
 const Navbar = () => {
   const isMobile = useBreakpointValue({ base: true, md: false })
+
+  // Check if there are any upcoming shows
+  const upcomingShows = allShows
+    .map((show) => ({ ...show, dateObj: new Date(show.date) }))
+    .filter((show) => show.dateObj >= new Date())
+
+  const hasUpcomingShows = upcomingShows.length > 0
+
+  // Filter nav links based on whether we have upcoming shows
+  const visibleNavLinks = navLinks.filter(
+    (link) => link.showWhenEmpty !== false || hasUpcomingShows
+  )
 
   return (
     <Box as="header" bg="black" color="white" p={4}>
@@ -96,7 +108,7 @@ const Navbar = () => {
               position="static"
               transform="translateX(-50%)"
             >
-              {navLinks.map(({ label, to }) => (
+              {visibleNavLinks.map(({ label, to }) => (
                 <MenuItem
                   as={RouterLink}
                   to={to}
@@ -163,7 +175,7 @@ const Navbar = () => {
 
             {/* Nav Links */}
             <HStack spacing={6}>
-              {navLinks.map(({ label, to }) => (
+              {visibleNavLinks.map(({ label, to }) => (
                 <ChakraLink
                   key={to}
                   as={RouterLink}
