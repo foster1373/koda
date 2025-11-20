@@ -11,7 +11,7 @@ import vert3 from '../images/vert-3.jpeg'
 import vert6 from '../images/vert-6.jpeg'
 // TODO: Import Andy's photos here, e.g.:
 import andy_hor from '../images/andy-hor.jpeg'
-import andy_vert from '../images/andy-vert.jpeg'
+import andy_vert from '../images/andy-vert-2.jpeg'
 
 export const members = [
   {
@@ -40,13 +40,13 @@ export const members = [
     role: 'Bass Guitar',
     image: andy_vert,
     bgImage: andy_hor,
-    bio: `Andy Hanna is a talented bassist known for his deep grooves and rhythmic precision. Growing up in a musical family, he was exposed to a wide range of genres, from classic rock to funk and jazz. This diverse background informs his playing style, which blends elements of each genre into a unique sound.
+    bio: `Andy Hanna is a talented bassist renowned for his groovy style, extensive knowledge of scales and music theory, and precise rhythmic execution. Growing up, he was exposed to a wide range of genres, including classic rock, delta blues, alternative and indie rock, and rap. This diverse background heavily contributes to his unique playing style, which blends elements of each genre into his playing style.
 
-    Andy's journey with music began at an early age when he picked up the guitar. However, it wasn't until he discovered the bass that he found his true passion. He quickly became the go-to bassist for local bands, earning a reputation for his ability to lock in with drummers and create tight, infectious rhythms.
+Andy's journey with music began at age 8, when he first picked up the acoustic guitar. In learning to play, Andy fell in love with music, eventually teaching himself piano and music theory as his journey progressed. A lead guitarist in many bands, it wasn’t until he joined KODA that he first played bass in a group setting.
 
-    In KODA, Andy's bass lines provide the backbone for the band's sound, driving the music forward and adding depth to each song. His creative approach to songwriting and arrangement has also made him an invaluable member of the group.
+In KODA, Andy's bass lines provide the backbone for the band's sound, driving the music forward and adding depth and unique rhythm to each song. As a songwriter, he takes great inspiration from bassists like the Beatles’ Paul McCartney and RHCP’s Flea, and his creative approach to songwriting and arrangement has also made him an invaluable member of the group.
 
-    Outside of music, Andy enjoys hiking, cooking, and spending time with his family and friends. He believes that life is all about balance, and he strives to bring that philosophy into his music as well.`,
+Outside of music, Andy enjoys playing hockey, hiking, watching movies, cooking, and spending time with his family and friends. He believes that life is all about balance, and he strives to bring that philosophy into his music as well.`,
   },
   {
     slug: 'brian-foster',
