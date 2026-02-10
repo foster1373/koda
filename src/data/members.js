@@ -54,11 +54,11 @@ Outside of music, Andy enjoys playing hockey, hiking, watching movies, cooking, 
     role: 'Drums',
     image: vert6,
     bgImage: brian_hor,
-    bio: `Brian's been behind a drum kit since first grade. By high school he was president of the marching band and section leader of the jazz band—early chops paired with a lifelong love of rock now power every driving beat he lays down with KODA.
+    bio: `Brian started playing drums in first grade. By high school, he was president of the marching band and section leader of the jazz band—blending those early skills with a love for rock that drives his playing in KODA.
 
-A Cleveland native, Brian graduated from The Ohio State University in May 2025 with a B.S. in Computer Science & Engineering and a Mathematics minor—specializing in AI and full‑stack development.
+A Cleveland native, Brian graduated from The Ohio State University in May 2025 with a degree in Computer Science and a minor in Mathematics.
 
-When he's not lifting or chasing the next outdoor adrenaline rush, he's probably jamming out to whatever album he's got on repeat. With the same focus he brings to the drum kit, Brian built this entire site from the ground up using React, Chakra UI, and modern web tools to spotlight KODA's story.`,
+Outside of drumming, he's into lifting, the outdoors, and discovering new music. He also built this entire website to help share KODA's story.`,
   },
   {
     slug: 'jake-juenger',
