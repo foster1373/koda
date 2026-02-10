@@ -1,5 +1,33 @@
 export const shows = [
   {
+    date: 'February 20, 2026',
+    venue: 'Rambling House',
+    city: 'Columbus, OH',
+    title: 'Direct Support',
+    ticketLink: 'https://www.bandsintown.com/e/107640115',
+  },
+  {
+    date: 'February 28, 2026',
+    venue: 'Moshmellow',
+    city: 'St. Louis, MO',
+    title: 'Headlining',
+    status: 'SOLD OUT',
+  },
+  {
+    date: 'March 14, 2026',
+    venue: 'Livewire Lounge',
+    city: 'Chicago, IL',
+    title: 'Headlining',
+  },
+  {
+    date: 'March 21, 2026',
+    venue: 'SONARFEST',
+    city: 'Kent, OH',
+    title: 'Direct Support',
+    ticketLink:
+      'https://www.purplepass.com/events/343557-sonarfest-oh-2026-mar-21st',
+  },
+  {
     date: 'April 25, 2025',
     venue: 'Summit Music Hall',
     city: 'Columbus, OH',
@@ -35,7 +63,8 @@ export const shows = [
     city: 'Columbus, OH',
     title: 'Opening for Brent Cobb',
     notes: 'Doors at 7:00. DM us for paper tickets!',
-    ticketLink: 'https://www.axs.com/events/952238/brent-cobb-tickets?skin=armusicbar&_ga=2.78015442.738452507.1753964704-103789931.1753964704',
+    ticketLink:
+      'https://www.axs.com/events/952238/brent-cobb-tickets?skin=armusicbar&_ga=2.78015442.738452507.1753964704-103789931.1753964704',
   },
   {
     date: 'August 29, 2025',
